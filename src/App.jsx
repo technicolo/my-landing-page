@@ -1,17 +1,44 @@
-import Footer from "../public/components/headerFooter/footer/footer";
-import Header from "../public/components/headerFooter/header/Header";
-import Hero from "../public/components/Hero/hero";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Loader from "../public/components/resources/loader/loader";
+import Projects from "../public/components/projects/project";
+import Profile from "../public/components/profile/profile";
+import Inicio from "../public/components/Hero/inicio";
 
+
+
+function AppContent() {
+  const location = useLocation();
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 500); // tiempo de la animación (800ms)
+
+    return () => clearTimeout(timer);
+  }, [location]);
+
+  return (
+    <>
+      {loading && <Loader />}
+     
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/profile" element={<Profile />} />
+        {/* más rutas si querés */}
+      </Routes>
+    
+    </>
+  );
+}
 
 function App() {
   return (
     <Router>
-      
-      <Routes>
-        <Route path="/" element={<Hero />} />
-      </Routes>
-      
+      <AppContent />
     </Router>
   );
 }
