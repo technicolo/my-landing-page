@@ -3,11 +3,10 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: 225%;
+    width: 100%;
     background: linear-gradient(135deg, #3502ff, #3502ff, #00f0ff);
     color: white;
     text-align: center;
-    padding: 0 20px;
   }
   
   .hero-button {

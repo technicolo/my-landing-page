@@ -1,9 +1,8 @@
 .profile {
-  padding: 60px 20px;
+  padding: 100px 20px 60px; /* top - sides - bottom */
   text-align: center;
   max-width: 1200px; /* más grande que 1000px, opcional */
   margin: 0 auto;
-  padding: 0 20px; /* para que no pegue contra los bordes */
 }
 
 .profile-description {
@@ -57,3 +56,35 @@
 .star.filled {
   color: #f7c948;
 }
+
+.contact-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column; /* Poner uno debajo del otro */
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  width: 50%; 
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin {
+  background-color: #0077b5; /* Azul LinkedIn */
+}
+
+.github {
+  background-color: #333; /* Gris GitHub */
+}
+
+.contact-button:hover {
+  opacity: 0.85;
+}
+
