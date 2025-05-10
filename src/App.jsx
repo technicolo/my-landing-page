@@ -17,12 +17,17 @@ function AppContent() {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 500); // tiempo de la animación (800ms)
-
     return () => clearTimeout(timer);
   }, [location]);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+
   return (
     <>
+    
       {loading && <Loader />}
      
       <Routes>
@@ -38,7 +43,9 @@ function AppContent() {
 }
 
 function App() {
+  
   return (
+    
     <Router>
       <AppContent />
     </Router>

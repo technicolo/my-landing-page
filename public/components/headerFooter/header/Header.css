@@ -1,17 +1,20 @@
+/* Estilos base (ya los tenés, solo ajusto width) */
 .header {
-  position: fixed; /* Fija el header arriba */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 95%; /* Que ocupe todo el ancho */
-  z-index: 1000; /* Se quede por encima del resto */
+  width: 100%; /* mejor que 95% */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   background-color: #121212;
   color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap; /* para evitar desbordes */
 }
+
 
 .logo {
   font-size: 1.5rem;
@@ -33,4 +36,25 @@
 
 .nav-links a:hover {
   color: #00c896;
+}
+
+/* 🎯 Mobile responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    padding: 8px 0;
+    display: block;
+  }
 }
