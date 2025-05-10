@@ -4,6 +4,7 @@ import Loader from "../public/components/resources/loader/loader";
 import Projects from "../public/components/projects/project";
 import Profile from "../public/components/profile/profile";
 import Inicio from "../public/components/Hero/inicio";
+import ProjectDetail from "../public/components/projects/prjectDetail";
 
 
 
@@ -28,6 +29,7 @@ function AppContent() {
         <Route path="/" element={<Inicio />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/projects/:id" element={<ProjectDetail />} />
         {/* más rutas si querés */}
       </Routes>
     

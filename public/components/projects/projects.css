@@ -85,3 +85,17 @@
   font-size: 1.3rem;
   color: #333;
 }
+
+.project-detail {
+  max-width: 900px;
+  margin: 100px auto 40px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.project-detail p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
