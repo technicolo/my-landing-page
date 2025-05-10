@@ -99,3 +99,25 @@
   font-size: 1.1rem;
   color: #ccc;
 }
+
+.github-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-github-button {
+  padding: 12px 24px;
+  background-color: #3502ff;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-github-button:hover {
+  background-color: #1f01aa;
+}

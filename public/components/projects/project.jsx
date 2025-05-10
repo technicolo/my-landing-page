@@ -7,7 +7,7 @@ const projects = [
   {
     id: 'front-proyecto-final',
     title: 'front-proyecto-final',
-    image: '../../../images/mercado trabajos/register.png'
+    image: '../../../images/mercado-trabajos/register.png'
   },
   {
     id: 'Conversor',
