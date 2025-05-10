@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+
 import { useState, useEffect } from "react";
 import Loader from "../public/components/resources/loader/loader";
 import Projects from "../public/components/projects/project";
