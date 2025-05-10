@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div className="project-card" key={index}>
-              <Link to={`/projects/${project.id}`} className="project-link">
+              <Link to={`/#/projects/${project.id}`} className="project-link">
                 <img src={project.image} alt={project.title} className="project-image" />
                 <div className="overlay">
                   <span className="overlay-text">Ver más</span>
