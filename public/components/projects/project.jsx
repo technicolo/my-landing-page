@@ -1,19 +1,21 @@
 import React from 'react';
 import './Projects.css';
+
 import Header from '../headerFooter/header/Header';
 import { Link } from 'react-router-dom';
 
+const base = import.meta.env.BASE_URL;
 
 const projects = [
   {
     id: 'front-proyecto-final',
     title: 'front-proyecto-final',
-    image: 'public/images/mercado-trabajos/register.png'
+    image: `${base}images/mercado-trabajos/register.png`
   },
   {
     id: 'Conversor',
     title: 'Conversor Monedas',
-    image: 'public/images/conversor/login.png'
+    image: `${base}images/conversor/login.png`
   }
 ];
 
