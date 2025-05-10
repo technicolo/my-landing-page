@@ -5,17 +5,19 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Header from "../headerFooter/header/Header";
 
+const base = import.meta.env.BASE_URL;
+
 const projectData = {
   "front-proyecto-final": {
     title: "front-proyecto-final",
     description:
       "esta es una aplicacion de estilo de red social pero orientada a los trabajos que hice en la facultad como projecto final, visualmente mejor que mi conversor y con algun que otro orgullo personal como el register por pasos, los comentarios y el el poder agregar imagenes via link.",
     images: [
-      "public/images/mercado-trabajos/BecomeWorker3de3.png",
-      "public/images/mercado-trabajos/workerProfielEdit.png",
-      "public/images/mercado-trabajos/workerProfile.png",
-      "public/images/mercado-trabajos/categories.png",
-      "public/images/mercado-trabajos/mainPage.png",
+      `${base}images/mercado-trabajos/BecomeWorker3de3.png`,
+      `${base}images/mercado-trabajos/workerProfielEdit.png`,
+      `${base}images/mercado-trabajos/workerProfile.png`,
+      `${base}images/mercado-trabajos/categories.png`,
+      `${base}images/mercado-trabajos/mainPage.png`,
     ],
     githubFront: "https://github.com/technicolo/FrontProyectFinal",
     githubBack: "https://github.com/technicolo/ProjectoLabBackend",
@@ -25,9 +27,9 @@ const projectData = {
     description:
       "Este es mi 1er conversor, no es muy lindo pero es uno de mis primeros acercamientos a angular y c#.",
     images: [
-      "public/images/conversor/conversorMain.png",
-      "public/images/conversor/registroConversor.png",
-      "public/images/conversor/planesConversor.png",
+      `${base}images/conversor/conversorMain.png`,
+      `${base}images/conversor/registroConversor.png`,
+      `${base}images/conversor/planesConversor.png`,
     ],
     githubFront: "https://github.com/technicolo/front-conversor-monedas",
     githubBack: "https://github.com/technicolo/ConversorBackEnd",
