@@ -1,0 +1,23 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #3502ff, #3502ff, #00f0ff);
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-button {
+    background-color: #2dabf9;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
