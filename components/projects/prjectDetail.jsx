@@ -11,11 +11,11 @@ const projectData = {
     description:
       "esta es una aplicacion de estilo de red social pero orientada a los trabajos que hice en la facultad como projecto final, visualmente mejor que mi conversor y con algun que otro orgullo personal como el register por pasos, los comentarios y el el poder agregar imagenes via link.",
     images: [
-      "/images/mercado-trabajos/BecomeWorker3de3.png",
-      "/images/mercado-trabajos/workerProfielEdit.png",
-      "/images/mercado-trabajos/workerProfile.png",
-      "/images/mercado-trabajos/categories.png",
-      "/images/mercado-trabajos/mainPage.png",
+      "public/images/mercado-trabajos/BecomeWorker3de3.png",
+      "public/images/mercado-trabajos/workerProfielEdit.png",
+      "public/images/mercado-trabajos/workerProfile.png",
+      "public/images/mercado-trabajos/categories.png",
+      "public/images/mercado-trabajos/mainPage.png",
     ],
     githubFront: "https://github.com/technicolo/FrontProyectFinal",
     githubBack: "https://github.com/technicolo/ProjectoLabBackend",
@@ -25,9 +25,9 @@ const projectData = {
     description:
       "Este es mi 1er conversor, no es muy lindo pero es uno de mis primeros acercamientos a angular y c#.",
     images: [
-      "/images/conversor/conversorMain.png",
-      "/images/conversor/registroConversor.png",
-      "/images/conversor/planesConversor.png",
+      "public/images/conversor/conversorMain.png",
+      "public/images/conversor/registroConversor.png",
+      "public/images/conversor/planesConversor.png",
     ],
     githubFront: "https://github.com/technicolo/front-conversor-monedas",
     githubBack: "https://github.com/technicolo/ConversorBackEnd",
