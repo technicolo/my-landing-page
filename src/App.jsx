@@ -27,7 +27,7 @@ function AppContent() {
       {loading && <Loader />}
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/#/projects" element={<Projects />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
