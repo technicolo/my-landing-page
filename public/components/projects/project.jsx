@@ -3,16 +3,17 @@ import './Projects.css';
 import Header from '../headerFooter/header/Header';
 import { Link } from 'react-router-dom';
 
+
 const projects = [
   {
     id: 'front-proyecto-final',
     title: 'front-proyecto-final',
-    image: '/images/mercado-trabajos/register.png'
+    image: 'public/images/mercado-trabajos/register.png'
   },
   {
     id: 'Conversor',
     title: 'Conversor Monedas',
-    image: '/images/conversor/login.png'
+    image: 'public/images/conversor/login.png'
   }
 ];
 
