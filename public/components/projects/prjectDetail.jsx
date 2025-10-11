@@ -34,10 +34,10 @@ const projectData = {
     githubFront: "https://github.com/technicolo/front-conversor-monedas",
     githubBack: "https://github.com/technicolo/ConversorBackEnd",
   },
-    Conversor: {
-    title: "autofiller",
+    autofiller: {
+    title: "autofilller-personal",
     description:
-      "este es de los pocos proyectos de los cales me siento mas orgulloso, no es visualmente lo mejor que echo pero lo importante es su utilidad, "+
+      "este es de los pocos proyectos de los cuales me siento mas orgulloso, no es visualmente lo mejor que echo pero lo importante es su utilidad, "+
       "es eso, un autofiller, lo hice en un golpe de inspiracion por ver phineas y ferb para resolver un problema recurrente y ese problema ocurria cuando queria"+
       "rellenar solicitudes de trabajo y ese era que simepre que intentaba rellenar una solicitud linkedin me redirigia a otra pagina, ya sea de la empresa o a otro portal de trabajos, "+
       "me resultaba frustrante y agotador tener que rellenar una y otr vez los formularios asi que decicdi que un autofiller era un buena idea para ahorrar tiempo y esfuerzo, ",

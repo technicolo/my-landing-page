@@ -18,8 +18,8 @@ const projects = [
     image: `${base}images/conversor/login.png`
   },
   {
-    id: 'autofilller-personal',
-    title: 'Conversor Monedas',
+    id: 'autofiller',
+    title: 'autofiller personal',
     image: `${base}images/autofiller/autofiller.png`
   }
 ];
