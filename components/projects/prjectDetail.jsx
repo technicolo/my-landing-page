@@ -39,7 +39,7 @@ const projectData = {
     description:
       "este es de los pocos proyectos de los cuales me siento mas orgulloso, no es visualmente lo mejor que echo pero lo importante es su utilidad, "+
       "es eso, un autofiller, lo hice en un golpe de inspiracion por ver phineas y ferb para resolver un problema recurrente y ese problema ocurria cuando queria "+
-      "rellenar solicitudes de trabajo me redirigia a otra pagina, ya sea de la empresa o a otro portal de trabajos, "+
+      "rellenar solicitudes de trabajo, estas me redirigian a otra pagina, ya sea de la empresa o a otro portal de trabajos, "+
       "me resultaba frustrante y agotador tener que rellenar una y otra vez los formularios asi que decicdi que un autofiller era un buena idea para ahorrar tiempo y esfuerzo, ",
     images: [
       `${base}images/autofiller/autofiller.png`,
