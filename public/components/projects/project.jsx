@@ -8,8 +8,8 @@ const base = import.meta.env.BASE_URL;
 
 const projects = [
   {
-    id: 'red social servicios',
-    title: 'front-proyecto-final',
+    id: 'frontPorjectFinal',
+    title: 'red social servicios',
     image: `${base}images/mercado-trabajos/register.png`
   },
   {

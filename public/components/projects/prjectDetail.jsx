@@ -8,8 +8,8 @@ import Header from "../headerFooter/header/Header";
 const base = import.meta.env.BASE_URL;
 
 const projectData = {
-  "front-proyecto-final": {
-    title: "front-proyecto-final",
+  frontPorjectFinal: {
+    title: "red social servicios",
     description:
       "esta es una aplicacion de estilo de red social pero orientada a los trabajos que hice en la facultad como projecto final, visualmente mejor que mi conversor y con algun que otro orgullo personal como el register por pasos, los comentarios y el el poder agregar imagenes via link.",
     images: [
@@ -23,7 +23,7 @@ const projectData = {
     githubBack: "https://github.com/technicolo/ProjectoLabBackend",
   },
   Conversor: {
-    title: "Conversor",
+    title: "Conversor Monedas",
     description:
       "Este es mi 1er conversor, no es muy lindo pero es uno de mis primeros acercamientos a angular y c#.",
     images: [
@@ -38,9 +38,9 @@ const projectData = {
     title: "autofilller-personal",
     description:
       "este es de los pocos proyectos de los cuales me siento mas orgulloso, no es visualmente lo mejor que echo pero lo importante es su utilidad, "+
-      "es eso, un autofiller, lo hice en un golpe de inspiracion por ver phineas y ferb para resolver un problema recurrente y ese problema ocurria cuando queria"+
-      "rellenar solicitudes de trabajo y ese era que simepre que intentaba rellenar una solicitud linkedin me redirigia a otra pagina, ya sea de la empresa o a otro portal de trabajos, "+
-      "me resultaba frustrante y agotador tener que rellenar una y otr vez los formularios asi que decicdi que un autofiller era un buena idea para ahorrar tiempo y esfuerzo, ",
+      "es eso, un autofiller, lo hice en un golpe de inspiracion por ver phineas y ferb para resolver un problema recurrente y ese problema ocurria cuando queria "+
+      "rellenar solicitudes de trabajo, estas me redirigian a otra pagina, ya sea de la empresa o a otro portal de trabajos, "+
+      "me resultaba frustrante y agotador tener que rellenar una y otra vez los formularios asi que decicdi que un autofiller era un buena idea para ahorrar tiempo y esfuerzo, ",
     images: [
       `${base}images/autofiller/autofiller.png`,
       `${base}images/autofiller/autofillCategoriesInputs.png`,
