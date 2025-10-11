@@ -23,7 +23,7 @@ const projectData = {
     githubBack: "https://github.com/technicolo/ProjectoLabBackend",
   },
   Conversor: {
-    title: "Conversor",
+    title: "Conversor Monedas",
     description:
       "Este es mi 1er conversor, no es muy lindo pero es uno de mis primeros acercamientos a angular y c#.",
     images: [
