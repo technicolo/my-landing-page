@@ -9,7 +9,7 @@ const base = import.meta.env.BASE_URL;
 
 const projectData = {
   "front-proyecto-final": {
-    title: "front-proyecto-final",
+    title: "red social servicios",
     description:
       "esta es una aplicacion de estilo de red social pero orientada a los trabajos que hice en la facultad como projecto final, visualmente mejor que mi conversor y con algun que otro orgullo personal como el register por pasos, los comentarios y el el poder agregar imagenes via link.",
     images: [
