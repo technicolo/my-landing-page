@@ -8,7 +8,7 @@ const base = import.meta.env.BASE_URL;
 
 const projects = [
   {
-    id: 'front-proyecto-final',
+    id: 'red social servicios',
     title: 'front-proyecto-final',
     image: `${base}images/mercado-trabajos/register.png`
   },
@@ -16,6 +16,11 @@ const projects = [
     id: 'Conversor',
     title: 'Conversor Monedas',
     image: `${base}images/conversor/login.png`
+  },
+  {
+    id: 'autofilller-personal',
+    title: 'Conversor Monedas',
+    image: `${base}images/autofiller/autofiller.png`
   }
 ];
 
