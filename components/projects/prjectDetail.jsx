@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import "./Projects.css";
+import "./projects.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Header from "../headerFooter/header/Header";
@@ -9,9 +9,9 @@ const base = import.meta.env.BASE_URL;
 
 const projectData = {
   frontPorjectFinal: {
-    title: "red social servicios",
+    title: "Red social de servicios",
     description:
-      "esta es una aplicacion de estilo de red social pero orientada a los trabajos que hice en la facultad como projecto final, visualmente mejor que mi conversor y con algun que otro orgullo personal como el register por pasos, los comentarios y el el poder agregar imagenes via link.",
+      "Esta es una aplicación de estilo red social pero orientada a los trabajos que hice en la facultad como proyecto final: visualmente mejor que mi conversor y con algún que otro orgullo personal, como el registro por pasos, los comentarios y poder agregar imágenes vía link.",
     images: [
       `${base}images/mercado-trabajos/BecomeWorker3de3.png`,
       `${base}images/mercado-trabajos/workerProfielEdit.png`,
@@ -23,9 +23,9 @@ const projectData = {
     githubBack: "https://github.com/technicolo/ProjectoLabBackend",
   },
   Conversor: {
-    title: "Conversor Monedas",
+    title: "Conversor de monedas",
     description:
-      "Este es mi 1er conversor, no es muy lindo pero es uno de mis primeros acercamientos a angular y c#.",
+      "Este es mi primer conversor, no es muy lindo pero es uno de mis primeros acercamientos a Angular y C#.",
     images: [
       `${base}images/conversor/conversorMain.png`,
       `${base}images/conversor/registroConversor.png`,
@@ -34,20 +34,17 @@ const projectData = {
     githubFront: "https://github.com/technicolo/front-conversor-monedas",
     githubBack: "https://github.com/technicolo/ConversorBackEnd",
   },
-    autofiller: {
-    title: "autofilller-personal",
+  autofiller: {
+    title: "Autofiller personal",
     description:
-      "este es de los pocos proyectos de los cuales me siento mas orgulloso, no es visualmente lo mejor que echo pero lo importante es su utilidad, "+
-      "es eso, un autofiller, lo hice en un golpe de inspiracion por ver phineas y ferb para resolver un problema recurrente y ese problema ocurria cuando queria "+
-      "rellenar solicitudes de trabajo, estas me redirigian a otra pagina, ya sea de la empresa o a otro portal de trabajos, "+
-      "me resultaba frustrante y agotador tener que rellenar una y otra vez los formularios asi que decicdi que un autofiller era un buena idea para ahorrar tiempo y esfuerzo, ",
+      "De los pocos proyectos de los que me siento más orgulloso: no es visualmente lo mejor que hice, pero lo importante es su utilidad. Es un autofiller que resuelve un problema recurrente al rellenar solicitudes de trabajo que redirigen a otra página, ya sea de la empresa o a otro portal.",
     images: [
       `${base}images/autofiller/autofiller.png`,
       `${base}images/autofiller/autofillCategoriesInputs.png`,
-      `${base}images/autofiller/inputFillSample.png`
+      `${base}images/autofiller/inputFillSample.png`,
     ],
     githubFront: "https://github.com/technicolo/autofill-trabajos",
-    githubBack: "No tiene backend"
+    githubBack: "No tiene backend",
   },
 };
 
@@ -55,7 +52,7 @@ const ProjectDetail = () => {
   const { id } = useParams();
   const project = projectData[id];
 
-  if (!project) return <p>Proyecto no encontrado</p>;
+  if (!project) return <p className="not-found">Proyecto no encontrado</p>;
 
   return (
     <>
@@ -75,7 +72,7 @@ const ProjectDetail = () => {
             href={project.githubFront}
             target="_blank"
             rel="noopener noreferrer"
-            className="project-github-button"
+            className="btn btn-primary"
           >
             Ver Frontend
           </a>
@@ -83,7 +80,7 @@ const ProjectDetail = () => {
             href={project.githubBack}
             target="_blank"
             rel="noopener noreferrer"
-            className="project-github-button"
+            className="btn btn-primary"
           >
             Ver Backend
           </a>
