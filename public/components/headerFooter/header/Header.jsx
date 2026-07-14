@@ -11,7 +11,6 @@ const Header = () => {
           <li><a href="/my-landing-page/#/projects">Proyectos</a></li>
         </ul>
       </nav>
-      <a href="mailto:franfrare19@gmail.com" className="btn btn-ghost">Contactarme</a>
     </header>
   );
 };
