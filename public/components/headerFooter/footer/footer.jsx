@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} Nicolás Dev. Todos los derechos reservados.</p>
+      <p>Francisco Gonzalez Frare — Rosario, Argentina. © {new Date().getFullYear()}</p>
     </footer>
   );
 };

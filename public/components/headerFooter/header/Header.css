@@ -1,60 +1,41 @@
-/* Estilos base (ya los tenés, solo ajusto width) */
-.header {
+/* Uses the .nav / .nav-brand classes from nocturne-tokens.css for color and
+   type; this file only adds the fixed-header layout and the link list,
+   which the token sheet doesn't own. */
+.site-header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* mejor que 95% */
+  width: 100%;
   z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #121212;
-  color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  flex-wrap: wrap; /* para evitar desbordes */
-}
-
-
-.logo {
-  font-size: 1.5rem;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-divider);
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: var(--space-4);
   margin: 0;
   padding: 0;
 }
 
 .nav-links a {
-  color: white;
+  color: inherit;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
-  color: #00c896;
+  color: var(--color-accent);
 }
 
-/* 🎯 Mobile responsive */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
+@media (max-width: 640px) {
+  .site-header {
+    flex-wrap: wrap;
+    row-gap: var(--space-2);
   }
-
   .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-    width: 100%;
-  }
-
-  .nav-links a {
-    padding: 8px 0;
-    display: block;
+    gap: var(--space-3);
   }
 }

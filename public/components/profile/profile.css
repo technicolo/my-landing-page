@@ -1,91 +1,132 @@
+/* Sobre mí / stack / trayectoria / contacto — one page, four clusters.
+   Layout only: color, font and radius all come from nocturne-tokens.css. */
+
 .profile {
-  padding: 100px 20px 60px; /* top - sides - bottom */
-  text-align: center;
-  max-width: 1200px; /* más grande que 1000px, opcional */
-  margin: 0 auto;
-}
-
-.profile-description {
-  margin-bottom: 40px;
-}
-
-.profile-description h2 {
-  font-size: 2.5rem;
-  color: #ffffff;
-  padding-top: 100px;
-}
-
-.profile-description p {
-  font-size: 1.2rem;
-  color: #ffffff;
-  max-width: 800px;
-  margin: 20px auto 0;
-}
-
-.profile-skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  padding: 140px clamp(20px, 5vw, 72px) 80px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.skill-card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.kicker {
+  position: relative;
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 16px;
 }
 
-.skill-icon {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #3502ff;
+.profile-description p {
+  font-size: 17px;
+  line-height: 28px;
+  max-width: 68ch;
+  margin: 0 0 48px;
+  color: var(--color-text);
 }
 
-.skill-info h3 {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 8px;
+/* — stack rows — */
+.feature {
+  display: grid;
+  grid-template-columns: minmax(64px, 120px) minmax(0, 200px) minmax(0, 1fr);
+  gap: 20px clamp(24px, 4vw, 64px);
+  align-items: baseline;
+  padding: 24px 0;
+  position: relative;
 }
-
-.skill-stars {
-  font-size: 1.2rem;
-  color: #ccc;
+.feature + .feature::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-neutral-700) 48px calc(100% - 48px), transparent);
 }
-
-.star.filled {
-  color: #f7c948;
+.f-num {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 15px;
+  color: var(--color-accent);
+  margin: 0;
 }
-
-.contact-buttons {
-  margin-top: 30px;
+.f-title {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+.f-tags {
   display: flex;
-  flex-direction: column; /* Poner uno debajo del otro */
-  align-items: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.contact-button {
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  width: 50%; 
-  text-align: center;
-  transition: background-color 0.3s ease;
+.rule {
+  height: 1px; border: 0; margin: 48px 0;
+  background: linear-gradient(to right, transparent, var(--color-divider) 48px calc(100% - 48px), transparent);
 }
 
-.linkedin {
-  background-color: #0077b5; /* Azul LinkedIn */
+/* — trayectoria — */
+.timeline-item {
+  display: grid;
+  grid-template-columns: minmax(64px, 130px) minmax(0, 1fr);
+  gap: 20px clamp(24px, 4vw, 64px);
+  padding: 22px 0;
+  position: relative;
+  text-align: left;
+}
+.timeline-item + .timeline-item::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-neutral-700) 48px calc(100% - 48px), transparent);
+}
+.t-when {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 15px;
+  color: var(--color-accent);
+  margin: 0;
+}
+.t-role {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 19px;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+.t-org {
+  font-size: 14px;
+  margin: 2px 0 0;
+  color: color-mix(in srgb, var(--color-text) 64%, transparent);
+}
+.t-copy {
+  font-size: 15.5px;
+  line-height: 26px;
+  margin: 8px 0 0;
+  color: color-mix(in srgb, var(--color-text) 78%, transparent);
+  max-width: 58ch;
 }
 
-.github {
-  background-color: #333; /* Gris GitHub */
+/* — contacto — */
+.contacto h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 26px;
+  margin: 0;
 }
-
-.contact-button:hover {
-  opacity: 0.85;
+.contacto .sub {
+  font-size: 15.5px;
+  line-height: 26px;
+  color: color-mix(in srgb, var(--color-text) 78%, transparent);
+  margin: 12px 0 0;
+  max-width: 58ch;
 }
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: 28px;
+}
+.contact-buttons .btn { white-space: nowrap; }
 
+@media (max-width: 720px) {
+  .feature, .timeline-item { grid-template-columns: 1fr; gap: 10px; }
+}

@@ -1,6 +1,5 @@
 import React from 'react';
-import './Projects.css';
-
+import './projects.css';
 import Header from '../headerFooter/header/Header';
 import { Link } from 'react-router-dom';
 
@@ -9,19 +8,25 @@ const base = import.meta.env.BASE_URL;
 const projects = [
   {
     id: 'frontPorjectFinal',
-    title: 'red social servicios',
-    image: `${base}images/mercado-trabajos/register.png`
+    title: 'Red social de servicios',
+    kicker: 'Proyecto final — facultad',
+    description: 'Aplicación estilo red social orientada a trabajos de oficios, con registro por pasos, comentarios y carga de imágenes vía link.',
+    image: `${base}images/mercado-trabajos/register.png`,
   },
   {
     id: 'Conversor',
-    title: 'Conversor Monedas',
-    image: `${base}images/conversor/login.png`
+    title: 'Conversor de monedas',
+    kicker: 'Proyecto — facultad',
+    description: 'Uno de mis primeros acercamientos a Angular y C#: conversión de divisas con planes y registro.',
+    image: `${base}images/conversor/login.png`,
   },
   {
     id: 'autofiller',
-    title: 'autofiller personal',
-    image: `${base}images/autofiller/autofiller.png`
-  }
+    title: 'Autofiller personal',
+    kicker: 'Proyecto personal',
+    description: 'Herramienta para completar formularios de trabajo automáticamente a partir de una estrategia de mapeo configurable.',
+    image: `${base}images/autofiller/autofiller.png`,
+  },
 ];
 
 const Projects = () => {
@@ -30,21 +35,21 @@ const Projects = () => {
       <Header />
       <section className="projects" id="projects">
         <div className="projects-header">
-          <h2>Proyectos</h2>
-          <p>Algunos trabajos realicé.</p>
+          <span className="kicker">Proyectos</span>
+          <p className="intro">Algunos trabajos que realicé.</p>
         </div>
 
         <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div className="project-card" key={index}>
-              <Link to={`/projects/${project.id}`} className="project-link">
+          {projects.map((project) => (
+            <Link to={`/projects/${project.id}`} className="project-card" key={project.id}>
+              <div className="project-thumb">
                 <img src={project.image} alt={project.title} className="project-image" />
-                <div className="overlay">
-                  <span className="overlay-text">Ver más</span>
-                </div>
-              </Link>
-              <h3>{project.title}</h3>
-            </div>
+                <div className="overlay"><span className="overlay-text">Ver más</span></div>
+              </div>
+              <span className="card-kicker">{project.kicker}</span>
+              <h3 className="card-title">{project.title}</h3>
+              <p className="card-body">{project.description}</p>
+            </Link>
           ))}
         </div>
       </section>
